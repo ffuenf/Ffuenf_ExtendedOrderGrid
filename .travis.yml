@@ -1,0 +1,52 @@
+language: php
+sudo: false
+cache:
+  apt: true
+  directories:
+  - "$HOME/.composer/cache"
+  - "$HOME/.cache/bin"
+  - "$HOME/.n98-magerun/modules"
+  - "$HOME/.cache/magento"
+php:
+- 5.5
+- 5.6
+- 7.0
+matrix:
+  fast_finish: true
+  allow_failures:
+  - php: 5.6
+    env: MAGENTO_VERSION=ce-1.8.1.0
+  - php: 7.0
+    env: MAGENTO_VERSION=ce-1.8.1.0
+env:
+  global:
+  - APPNAME=Ffuenf_ExtendedOrderGrid
+  - secure: FrAwo/wzU6CA7BcDen+YXIS/gJhacI+DUVWbWY28rvUFaSJvJVOEpalCegNdVlFYBOaT8o1z4z2e10/jeU8SAKYG6denHgyF05zLjKNUCT82GvuXBD2YoLYwAFJWX4QkA9DcfIuqhbYy35Z7s1Ur0tdQYdSdIhjQG1ZigFdnh9tXMyNeKijtaKzTlSj+X8pNJ9YLAR+c87YGaHpDgUQogN78Izj5TO0b8Z9dz3DvIrOJ7uog3QHWKcy4BRTEfWxR5neEAJHAUil5VHeG+dGyiTjm640SUt7I+2L09QV4/NYE+YxYRHoKLr42Po6K23vOC1N52RTIM8xh+pciB+gUeBeUODURPm07CLbPw++xdjR794o6kN7XJCUv27sR67MuFnkLxiYVffImlHykH3xbxierFI0sDhOIO9l6q6Ge4X+rZBoJo18pVcVdQCfbmKfP1i2+y9mqbhsc6gFZ6IPMZe0C+L9e7sCxlq0I6nHO9OXO9TEU8Ag0+tJluBW79OPHj1Bbm851YTMdxO+lpVNAaC8sPiU1ifAc6321uuQa3VZ8y1f96pa2TXtD/VoaC0BtvhgBC4wjSnAh7ZjE4AqO38rGytN1sIJeMeBTeGepqHDV0LP1lWMu7KcPHfWjMlG+Ze/nSDD/16Ea/EPLqKQNAvhA6c7qAylnOItzwa5EDL8=
+  - secure: o2vZQKc01JU9wXYTpujlpKvIx+VwypnSDWFiG6b9C60XUluguh6uAAVmHI/4uyGfXsXNnpMCPsaqJyu1fgDY0Z5WOU82KHXMX5qjzhONVa31R4eFi6ttjJO4GjTIjbhoDQbaRYjbDnSc5HAOV2mF7qiVpK/x0XXGTv2JoKMHNOBoadHUvPMzIf4/ztEYys9VXDCZ52qqeZVuzq9vnbs61uocbXue3nWOMYrsZEkPXYb7kwEL8yZQgqu4PFGe/skamYx8YXkVTIBoLA5QAls0pccPgb7Coxd1SKkc0v+pppUaEN0Ed2d7mWlI+fB08Kn1Fd9pg1Gl9dZsx4ylH2CDqCvsgQF8q3nvKIW9ZOsQLGTDNN/S4Cea7CMbEaGzsEOJlPbd5Ay/lE3ELq1anvfCq50Sfhuzb+igLcWbp3jE2qHvqaQOi3nxK9pGHQyHaSaPRsxdE4KWACuceqzYYPdTwGIvYLe6zO/m7kFA459RUft9GA0/y2WpoUuVdBWG87daqjXxhUeTpV9vhz8cUKRbfWcZOK/YH+iLOymZ+n/6/kmE4rV+h0KxcBmeOCQEu6KSud5+MRBWGy1R60n6tS4sBeqVpMIebfKfAcGzR2fqqW6hBfpS/ZT9o57cODGPZVhM2JAxAJuy7ZS5V299YzoqTc1R8mCyhKxQdAajZpyhaH4=
+  - secure: KsLbsuY2HaamYzFXNmO/Ng568rpHBPP+cPNDH83SiEzQoidWFv8p+uOARH+IxJdsuzj8iYI0ZXZqUpVGqWFWhtf13HYE7j1YUCRU4Q1dB0pv7+s36dN3uTly0O6JIV23EGLiSuIAg/QVu/6aFWw7Dvp/RVd9Am0nQ1o41jbN4ovz0LY1jVOoZW30iSEzDpNdhBTH5g20Cd4RUls/CBkqqUNfcmBiSwjZ/tZ2Q2OAjh+LRSTGB8Xh9XbR59WTpDdZXz+A43K8ECkc/tMrj8um3MyRHtCde9fKeIUwyj2Eikz+FoGhOaUf+MRGUrWzL78IN1v1IfGfckvPUqIl3suSMR8HiUlMFQZTEiZszF/Q4CRblHfWw0MBYxtYuJ/7+kiunzkojoBzC2HUB0kTBIiNLR/Kmo2/RHYX/xEfHZlcUzz8NcRd/B+dugQemtBqSrf8Ke15zr0s/KXH2kWXDN6XAYpnFbUXkoEh+eXzZ7Bj55sKIhSRAXfXqm3JS6ewmU7vPkUfJM6Mg00ssgRW84iEHRPNm1GpekBt0NKQ+youpVXGuzg6n4pENyWH7bWcqXXuTVQB+bxB7gtFGd0FkTxeWN2dAPAT5WCnRs1mgHGBPhgWD+0zR86jLBVx3vnMGx9z3IMZ2CWE2JcnHbLCwEEG/MOYF0ihVkjemPIdjThSjlI=
+  matrix:
+  - MAGENTO_VERSION=ce-1.9.2.4
+  - MAGENTO_VERSION=ce-1.9.1.1
+  - MAGENTO_VERSION=ce-1.8.1.0
+  - MAGENTO_VERSION=ce-1.7.0.2
+  - MAGENTO_VERSION=ce-1.6.2.0
+before_install:
+- curl -sSL https://raw.githubusercontent.com/ffuenf/MageTestStand/master/before_install.sh
+  | bash
+script:
+- curl -sSL https://raw.githubusercontent.com/ffuenf/MageTestStand/master/script.sh
+  | bash
+deploy:
+  provider: releases
+  file:
+  - "${APPNAME}-${TRAVIS_TAG}.zip"
+  - "${APPNAME}-${TRAVIS_TAG}.tar.gz"
+  skip_cleanup: true
+  on:
+    branch: master
+    tags: true
+  api_key:
+    secure: HwJIcuHthXNMmHTVghk8lIzLLkmHUwuvZhOYk+rO9WfEJSROXO1061ksK7Vef+LdwWKA3VUttWbf88hNNxh4MGWz8n8mzvuxeMGX4mM6ndiKnHooLE8hRElPM3pfsWvY4N8/b6JUDQN023ReUxnM9SJMw1dmxXAvTrJph/Al6XQ4/g0dJF7EGd8efNVrvUCfo1xjrFTvReHSd50RjVwV9qpOFZu+nT2KUby9kzXlaKACGGCxi6VzRBD3v6aZFCMcqrLIKmnSqjyGyfhfX2MinBx4t3ZdC7YF3w425tU8fzS/FqmvQEeDLgVRqiGC1aV9bLlC4ziQR012VYhohQ/NVqBnjCYvy8QVY2txFPAyqUc8wvGl9S/88b05006RtuFqq4DZE7DBpRKuLJnGohCgw8NZ8MpSWgwpN9HfwAXwFHbRG6yV97nDuSn8StixNR0yZ8TcPsQLdHcb8ElrZzb+yrx7Y+PRoekk9vMcS1TCg6lj2Qb/1SKJoKy+iB9jhSTqyIwEfrecHXe3Cq8Xv+MS42ZmjmkOF8d/AJA7fm1dBsz6X95gUswjB1BLVf2tdsReUy2LBIor6YR6uQR5MhA490/D2h9lqFMbeGEkaX8xW9sal4cp5sG+mSKjPneEY5XEG+dPxNo/5CVR25vuuaNQgySzhvy7lVNfd4j0yRmdqtM=
+notifications:
+  slack:
+    secure: hagQjQPDLIc80t78yVEvzTbd2HF9ydhLcOPtIzPD/lZot/nejMt5I3A7lNA410416AzEoshpHvGWYKuTDSN5uzfZ7KUvdVRi+eOslKE3tcaY/JviCMvTqcBBBFPva7JTrHFK/DvW9SGw7vHT5rO4xFUC0by0J339AcxcG51Vgwk/ai+ZlKE6UaZlU1c0/OnC5F7NClov2FD7Cewi9c/GNMJ7IGHa0yuR3rziYphiTGQ3Yf9JCCr9e3x8hGeQZyochIealXsI/3/5cQd+eDOO7OFshUEdcSAckhbizrdVboFWMfHZAm88Yi/e/TdNEhX2lDhMUAhVpGljPmVQD3LaPDteiYCH+MQJ/78YpX9+OtacGAWWgWV3Wl+SvWA5rVgBexjuExouJ6e04w9vK/KPWBAWxM9YgjxMdJdbB8DjLV4Cxk+UqLTZqan3iVqPFt2Ddwn0ngLiCcCIa8s2JV8Kv2l7gzmKCol1XKULd6Z3HYYwFcv5aqGyFIOWIP+YrXwVqbJvtrLTyneLip3FXZszoPYxw4IBP3U8BnK/sXd8Lo/d4nRMjq/4mpG+lG/bIX4UE8rqjAf0B5Rl8pI6vU2FkeIjKYS0+MXvvhS6RQvA7yV/nVA9ghdiB/j1LQJeMfP/Idm24vsNqA7jD1dcu1kNborRntjkXc9DDLC4C+58e4E=

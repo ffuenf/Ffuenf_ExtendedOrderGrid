@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffuenf_ExtendedOrderGrid extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   Ffuenf
+ *
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config>
+    <modules>
+        <Ffuenf_ExtendedOrderGrid>
+            <version>1.0.0</version>
+        </Ffuenf_ExtendedOrderGrid>
+    </modules>
+    <global>
+        <blocks>
+            <ffuenf_extendedordergrid>
+                <class>Ffuenf_ExtendedOrderGrid_Block</class>
+            </ffuenf_extendedordergrid>
+        </blocks>
+        <helpers>
+            <ffuenf_extendedordergrid>
+                <class>Ffuenf_ExtendedOrderGrid_Helper</class>
+            </ffuenf_extendedordergrid>
+        </helpers>
+        <models>
+            <ffuenf_extendedordergrid>
+                <class>Ffuenf_ExtendedOrderGrid_Model</class>
+            </ffuenf_extendedordergrid>
+            <sales_resource>
+                <rewrite>
+                    <order_grid_collection>Ffuenf_ExtendedOrderGrid_Model_Resource_Sales_Order_Grid_Collection</order_grid_collection>
+                </rewrite>
+            </sales_resource>
+        </models>
+        <resources>
+            <ffuenf_extendedordergrid_setup>
+                <setup>
+                    <module>Ffuenf_ExtendedOrderGrid</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+            </ffuenf_extendedordergrid_setup>
+        </resources>
+    </global>
+    <adminhtml>
+        <events>
+            <sales_order_grid_collection_load_before>
+                <observers>
+                    <ffuenf_extendedordergrid>
+                        <model>ffuenf_extendedordergrid/observer</model>
+                        <method>salesOrderGridCollectionLoadBefore</method>
+                    </ffuenf_extendedordergrid>
+                </observers>
+            </sales_order_grid_collection_load_before>
+        </events>
+        <layout>
+            <updates>
+                <ffuenf_extendedordergrid>
+                    <file>ffuenf/extendedordergrid.xml</file>
+                </ffuenf_extendedordergrid>
+            </updates>
+        </layout>
+    </adminhtml>
+    <default>
+        <ffuenf_extendedordergrid>
+            <general>
+                <enable>1</enable>
+            </general>
+        </ffuenf_extendedordergrid>
+    </default>
+    <uninstall>
+        <filename>uninstall.txt</filename>
+    </uninstall>
+    <phpunit>
+        <suite>
+            <modules>
+                <Ffuenf_ExtendedOrderGrid/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>

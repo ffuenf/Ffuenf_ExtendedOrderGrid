@@ -1,0 +1,5 @@
+app/code/community/Ffuenf/ExtendedOrderGrid                              app/code/community/Ffuenf/ExtendedOrderGrid
+app/design/adminhtml/default/default/layout/ffuenf/extendedordergrid.xml app/design/adminhtml/default/default/layout/ffuenf/extendedordergrid.xml
+app/etc/modules/Ffuenf_ExtendedOrderGrid.xml                             app/etc/modules/Ffuenf_ExtendedOrderGrid.xml
+skin/adminhtml/default/default/ffuenf/extendedordergrid.css              skin/adminhtml/default/default/ffuenf/extendedordergrid.css
+skin/adminhtml/default/default/ffuenf/images/paymentmethods              skin/adminhtml/default/default/ffuenf/images/paymentmethods

@@ -1,0 +1,22 @@
+div.ffuenf_extendedordergrid {
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  width: 60px;
+  height: 60px;
+}
+div.paymentmethod_paypal {
+  background-image: url(images/paymentmethods/paypal.png);
+}
+div.paymentmethod_apa {
+  background-image: url(images/paymentmethods/amazon-payments.png);
+}
+div.paymentmethod_pnsofortueberweisung {
+  background-image: url(images/paymentmethods/sofortueberweisung.png);
+}
+div.paymentmethod_invoice {
+  background-image: url(images/paymentmethods/invoice.png);
+}
+div.paymentmethod_banktransfer {
+  background-image: url(images/paymentmethods/banktransfer.png);
+}

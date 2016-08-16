@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffuenf_ExtendedOrderGrid extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   Ffuenf
+ *
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2015 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>ffuenf/extendedordergrid.css</stylesheet>
+            </action>
+        </reference>
+    </default>
+    <sales_order_grid_update_handle>
+        <reference name="sales_order.grid">
+            <action method="addColumnAfter">
+                <columnId>payment_method</columnId>
+                <arguments>
+                    <header>Payment Method</header>
+                    <index>payment_method</index>
+                    <filter_index>payment.method</filter_index>
+                    <type>text</type>
+                    <width>100px</width>
+                    <renderer>Ffuenf_ExtendedOrderGrid_Block_Adminhtml_Sales_Order_Renderer_Paymentmethod</renderer>
+                </arguments>
+                <after>grand_total</after>
+            </action>
+        </reference>
+    </sales_order_grid_update_handle>
+    <adminhtml_sales_order_grid>
+        <!-- apply layout handle defined above -->
+        <update handle="sales_order_grid_update_handle" />
+    </adminhtml_sales_order_grid>
+    <adminhtml_sales_order_index>
+        <!-- apply layout handle defined above -->
+        <update handle="sales_order_grid_update_handle" />
+    </adminhtml_sales_order_index>
+</layout>
