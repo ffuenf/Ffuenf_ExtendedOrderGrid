@@ -4,13 +4,13 @@ Ffuenf_ExtendedOrderGrid
 ========================
 [![GitHub tag](https://img.shields.io/github/tag/ffuenf/Ffuenf_ExtendedOrderGrid.svg)][tag]
 [![Build Status](https://img.shields.io/travis/ffuenf/Ffuenf_ExtendedOrderGrid.svg)][travis]
-[![VersionEye](https://www.versioneye.com/user/projects//badge.svg)][versioneye]
+[![VersionEye](https://www.versioneye.com/user/projects/57b30081b4fa6e00382ceb77/badge.svg)][versioneye]
 [![Code Quality](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid/badges/quality-score.png)][code_quality]
 [![Code Coverage](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid/badges/coverage.png)][code_coverage]
 [![PayPal Donate](https://img.shields.io/badge/paypal-donate-blue.svg)][paypal_donate]
 [tag]: https://github.com/ffuenf/Ffuenf_ExtendedOrderGrid
 [travis]: https://travis-ci.org/ffuenf/Ffuenf_ExtendedOrderGrid
-[versioneye]: https://www.versioneye.com/user/projects/
+[versioneye]: https://www.versioneye.com/user/projects/57b30081b4fa6e00382ceb77
 [code_quality]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid
 [code_coverage]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid
 [paypal_donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J2PQS2WLT2Y8W&item_name=Magento%20Extension%3a%20Ffuenf_ExtendedOrderGrid&item_number=Ffuenf_ExtendedOrderGrid&currency_code=EUR
