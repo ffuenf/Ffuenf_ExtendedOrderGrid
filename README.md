@@ -2,18 +2,11 @@
 
 Ffuenf_ExtendedOrderGrid
 ========================
-[![GitHub tag](https://img.shields.io/github/tag/ffuenf/Ffuenf_ExtendedOrderGrid.svg)][tag]
-[![Build Status](https://img.shields.io/travis/ffuenf/Ffuenf_ExtendedOrderGrid.svg)][travis]
-[![VersionEye](https://www.versioneye.com/user/projects//badge.svg)][versioneye]
-[![Code Quality](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid/badges/quality-score.png)][code_quality]
-[![Code Coverage](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid/badges/coverage.png)][code_coverage]
-[![PayPal Donate](https://img.shields.io/badge/paypal-donate-blue.svg)][paypal_donate]
-[tag]: https://github.com/ffuenf/Ffuenf_ExtendedOrderGrid
-[travis]: https://travis-ci.org/ffuenf/Ffuenf_ExtendedOrderGrid
-[versioneye]: https://www.versioneye.com/user/projects/
-[code_quality]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid
-[code_coverage]: https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid
-[paypal_donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J2PQS2WLT2Y8W&item_name=Magento%20Extension%3a%20Ffuenf_ExtendedOrderGrid&item_number=Ffuenf_ExtendedOrderGrid&currency_code=EUR
+[![GitHub tag](https://img.shields.io/github/tag/ffuenf/Ffuenf_ExtendedOrderGrid.svg)](https://github.com/ffuenf/Ffuenf_ExtendedOrderGrid)
+[![Build Status](https://img.shields.io/travis/ffuenf/Ffuenf_ExtendedOrderGrid.svg)](https://travis-ci.org/ffuenf/Ffuenf_ExtendedOrderGrid)
+[![Code Quality](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid/badges/quality-score.png)](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid)
+[![Code Coverage](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid/badges/coverage.png)](https://scrutinizer-ci.com/g/ffuenf/Ffuenf_ExtendedOrderGrid)
+[![PayPal Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J2PQS2WLT2Y8W&item_name=Magento%20Extension%3a%20Ffuenf_ExtendedOrderGrid&item_number=Ffuenf_ExtendedOrderGrid&currency_code=EUR)
 
 This is a extension for Magento Community Edition that allows adding columns to the Magento orders grid using layout handles.
 Currently it adds a column with the payment method using icons from [/50north](http://50north.de/kostenlose-payment-icons-fuer-den-europaeischen-markt/).
@@ -24,26 +17,19 @@ Platform
 
 The following versions are supported and tested:
 
-* Magento Community Edition 1.9.2.4
-* Magento Community Edition 1.9.1.1
-* Magento Community Edition 1.8.1.0
-* Magento Community Edition 1.7.0.2
-* Magento Community Edition 1.6.2.0
+* Magento Community Edition 1.9.3.10
 
 Other versions are assumed to work.
 
 Requirements
 ------------
 
-|                                                                     | PHP 5.5           | PHP 5.6           | PHP 7.0           |
-| ------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- |
-| [EOL](https://secure.php.net/supported-versions.php) / STABLE / RC  | STABLE            | **STABLE**        | **STABLE**        |
-| automated tests on [travis]                                         | **required pass** | **required pass** | **required pass** |
+|                                                                              | PHP 7.0           | PHP 7.1           | PHP 7.2           | PHP 7.3           |
+| ---------------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- | ----------------- |
+| [EOL](https://secure.php.net/supported-versions.php) / SEC-FIX / STABLE / RC | EOL               | SEC-FIX           | **STABLE**        | **STABLE**        |
+| automated tests on [travis]                                                  | **required pass** | **required pass** | **allow failure** | **allow failure** |
 
-Magento Community Edition officially supports PHP 5.4 and PHP 5.5.
-
-Non-official compatibility to PHP 5.6 may be reached by following the tips on [Use of iconv.internal_encoding is deprecated](https://magento.stackexchange.com/questions/34015/magento-1-9-php-5-6-use-of-iconv-internal-encoding-is-deprecated).
-Non-official compatibility to PHP 7.0 may be reached by using [Inchoo_PHP7](https://github.com/Inchoo/Inchoo_PHP7).
+Magento Community Edition [officially supports PHP 7.2](https://magento.com/tech-resources/download#download2240) as of 09-13-2018.
 
 Installation
 ------------
@@ -92,7 +78,7 @@ License and Author
 ------------------
 
 - Author:: Achim Rosenhagen (<a.rosenhagen@ffuenf.de>)
-- Copyright:: 2016, ffuenf
+- Copyright:: 2019, ffuenf
 
 The MIT License (MIT)
 
